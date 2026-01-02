@@ -340,7 +340,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-border py-12 px-4">
         <div className="container">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
               <div className="mb-4 flex items-center gap-2">
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 flex items-center justify-center font-bold text-white text-xl shadow-lg">
@@ -359,22 +359,6 @@ export default function Home() {
                 <li><a href="#" className="hover:text-cyan-400 transition">Features</a></li>
                 <li><a href="#" className="hover:text-cyan-400 transition">Pricing</a></li>
                 <li><a href="#" className="hover:text-cyan-400 transition">Security</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-cyan-400 transition">About</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition">Blog</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-4">Legal</h4>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#" className="hover:text-cyan-400 transition">Privacy</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition">Terms</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition">Compliance</a></li>
               </ul>
             </div>
           </div>
