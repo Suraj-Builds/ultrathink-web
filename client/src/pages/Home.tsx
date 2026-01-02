@@ -29,11 +29,8 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container flex items-center justify-between h-16">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center">
-              <span className="text-white font-bold text-sm">NK</span>
-            </div>
-            <span className="font-bold text-lg">UltraThin-K</span>
+          <div className="flex items-center gap-3">
+            <img src="/images/ultrathin-k-logo.png" alt="UltraThin-K" className="h-10 w-auto" />
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-sm hover:text-accent transition">
@@ -72,12 +69,12 @@ export default function Home() {
                 Give every business a digital workforce that thinks, learns, and works across all your systems—without replacing anything you already have.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:opacity-90 text-white">
-                  Start Free Trial <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-                <Button size="lg" variant="outline" className="border-purple-500/50 hover:bg-purple-900/20">
-                  Watch Demo
-                </Button>
+              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:opacity-90 text-white" onClick={() => window.open('https://calendly.com/hi-ultrathin-k/30min', '_blank')}>
+                Schedule Demo <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+              <Button size="lg" variant="outline" className="border-purple-500/50 hover:bg-purple-900/20" onClick={() => window.open('https://calendly.com/hi-ultrathin-k/30min', '_blank')}>
+                Book Meeting
+              </Button>
               </div>
             </div>
 
@@ -85,7 +82,8 @@ export default function Home() {
               <img
                 src="/images/ultrathink_nexus_platform.webp"
                 alt="UltraThin-K Nexus Platform"
-                className="w-full rounded-2xl shadow-2xl border border-purple-500/20"
+                className="w-full rounded-2xl shadow-2xl border border-purple-500/20 object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -106,7 +104,8 @@ export default function Home() {
             <img
               src="/images/ultrathink_nexus_platform_2.webp"
               alt="Problem vs Solution"
-              className="w-full rounded-2xl shadow-2xl border border-purple-500/20"
+              className="w-full rounded-2xl shadow-2xl border border-purple-500/20 object-cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -211,7 +210,8 @@ export default function Home() {
             <img
               src="/images/ultrathink_nexus_paradigm_shift.webp"
               alt="Old Paradigm vs New Era"
-              className="w-full rounded-2xl shadow-2xl border border-purple-500/20"
+              className="w-full rounded-2xl shadow-2xl border border-purple-500/20 object-cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -295,6 +295,7 @@ export default function Home() {
                         ? "bg-gradient-to-r from-cyan-500 to-purple-600 hover:opacity-90"
                         : "bg-purple-900/50 border border-purple-500/50 hover:bg-purple-900/70"
                     }`}
+                    onClick={() => window.open('https://calendly.com/hi-ultrathin-k/30min', '_blank')}
                   >
                     Get Started
                   </Button>
@@ -318,11 +319,11 @@ export default function Home() {
               Join leading organizations automating complex processes with intelligent agents.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:opacity-90 text-white">
-                Start Your Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:opacity-90 text-white" onClick={() => window.open('https://calendly.com/hi-ultrathin-k/30min', '_blank')}>
+                Schedule Demo <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
-              <Button size="lg" variant="outline" className="border-purple-500/50 hover:bg-purple-900/20">
-                Schedule Demo
+              <Button size="lg" variant="outline" className="border-purple-500/50 hover:bg-purple-900/20" onClick={() => window.open('https://calendly.com/hi-ultrathin-k/30min', '_blank')}>
+                Book Meeting
               </Button>
             </div>
           </div>
@@ -334,11 +335,8 @@ export default function Home() {
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">NK</span>
-                </div>
-                <span className="font-bold">UltraThin-K</span>
+              <div className="mb-4">
+                <img src="/images/ultrathin-k-logo.png" alt="UltraThin-K" className="h-12 w-auto" />
               </div>
               <p className="text-sm text-gray-400">Intelligent automation for enterprise systems.</p>
             </div>
