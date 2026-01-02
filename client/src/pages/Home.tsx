@@ -29,8 +29,11 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="container flex items-center justify-between h-16">
-          <div className="flex items-center gap-3">
-            <img src="/images/ultrathin-k-logo.png" alt="UltraThin-K" className="h-10 w-auto" />
+          <div className="flex items-center gap-2">
+            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 flex items-center justify-center font-bold text-white text-lg shadow-lg">
+              UK
+            </div>
+            <span className="hidden sm:inline font-bold text-lg bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">UltraThin-K</span>
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-sm hover:text-accent transition">
@@ -42,10 +45,14 @@ export default function Home() {
             <a href="#pricing" className="text-sm hover:text-accent transition">
               Pricing
             </a>
+            <Button
+              size="sm"
+              className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:opacity-90 text-white"
+              onClick={() => window.open('https://calendly.com/hi-ultrathin-k/30min', '_blank')}
+            >
+              Get Started
+            </Button>
           </div>
-          <Button className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:opacity-90">
-            Get Started
-          </Button>
         </div>
       </nav>
 
@@ -104,7 +111,7 @@ export default function Home() {
             <img
               src="/images/ultrathink_nexus_platform_2.webp"
               alt="Problem vs Solution"
-              className="w-full rounded-2xl shadow-2xl border border-purple-500/20 object-cover"
+              className="w-full max-h-80 rounded-2xl shadow-2xl border border-purple-500/20 object-cover"
               loading="lazy"
             />
           </div>
@@ -210,7 +217,7 @@ export default function Home() {
             <img
               src="/images/ultrathink_nexus_paradigm_shift.webp"
               alt="Old Paradigm vs New Era"
-              className="w-full rounded-2xl shadow-2xl border border-purple-500/20 object-cover"
+              className="w-full max-h-80 rounded-2xl shadow-2xl border border-purple-500/20 object-cover"
               loading="lazy"
             />
           </div>
@@ -335,8 +342,14 @@ export default function Home() {
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <div className="mb-4">
-                <img src="/images/ultrathin-k-logo.png" alt="UltraThin-K" className="h-12 w-auto" />
+              <div className="mb-4 flex items-center gap-2">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-600 flex items-center justify-center font-bold text-white text-xl shadow-lg">
+                  UK
+                </div>
+                <div>
+                  <div className="font-bold text-lg bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">UltraThin-K</div>
+                  <div className="text-xs text-gray-500">Nexus Platform</div>
+                </div>
               </div>
               <p className="text-sm text-gray-400">Intelligent automation for enterprise systems.</p>
             </div>
