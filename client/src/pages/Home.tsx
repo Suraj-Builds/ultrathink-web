@@ -87,7 +87,7 @@ export default function Home() {
 
             <div data-animate className="opacity-0 translate-x-8 transition-all duration-700 delay-200">
               <img
-                src="./images/ultrathink_nexus_platform.webp"
+                src="/images/ultrathink_nexus_platform.webp"
                 alt="UltraThin-K Nexus Platform"
                 className="w-full rounded-2xl shadow-2xl border border-purple-500/20 object-cover"
                 loading="lazy"
@@ -109,7 +109,7 @@ export default function Home() {
 
           <div data-animate className="opacity-0 translate-y-8 transition-all duration-700">
             <img
-              src="./images/ultrathink_nexus_platform_2.webp"
+              src="/images/ultrathink_nexus_platform_2.webp"
               alt="Problem vs Solution"
               className="w-full max-h-80 rounded-2xl shadow-2xl border border-purple-500/20 object-cover"
               loading="lazy"
@@ -215,7 +215,7 @@ export default function Home() {
 
           <div data-animate className="opacity-0 translate-y-8 transition-all duration-700">
             <img
-              src="./images/ultrathink_nexus_paradigm_shift.webp"
+              src="/images/ultrathink_nexus_paradigm_shift.webp"
               alt="Old Paradigm vs New Era"
               className="w-full max-h-80 rounded-2xl shadow-2xl border border-purple-500/20 object-cover"
               loading="lazy"
